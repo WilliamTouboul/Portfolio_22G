@@ -1,0 +1,33 @@
+@keyframes noise-anim {
+    0% {
+        background-position: bottom center;
+    }
+
+    20% {
+        background-position: center center;
+    }
+
+    40% {
+        background-position: center top;
+    }
+
+    60% {
+        background-position: center center;
+    }
+
+    70% {
+        background-position: bottom center;
+    }
+
+    80% {
+        background-position: center top;
+    }
+
+    90% {
+        background-position: center top;
+    }
+
+    100% {
+        background-position: bottom center;
+    }
+}
