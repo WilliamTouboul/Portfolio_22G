@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Montreal Bold";
+  src: url("../fonts/PPNeueMontreal-Bold.otf");
+}
+@font-face {
+  font-family: "Montreal Book";
+  src: url("../fonts/PPNeueMontreal-Bold.otf");
+}
+@font-face {
+  font-family: "Montreal Medium";
+  src: url("../fonts/PPNeueMontreal-Medium.otf");
+}
+@font-face {
+  font-family: "Montreal Thin";
+  src: url("../fonts/PPNeueMontreal-Thin.otf");
+}
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #081820;
+}
+body main {
+  padding-left: 60px;
+  padding-right: 60px;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  border: 2px red solid;
+  background-image: url("../images/noise.jpg");
+  background-repeat: repeat;
+  background-size: contain;
+  mix-blend-mode: overlay;
+  border: none;
+  -webkit-animation: bg-animation 0.2s infinite;
+          animation: bg-animation 0.2s infinite;
+}
+
+@-webkit-keyframes bg-animation {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5%, -5%);
+  }
+  20% {
+    transform: translate(-10%, 5%);
+  }
+  30% {
+    transform: translate(5%, -10%);
+  }
+  40% {
+    transform: translate(-5%, 15%);
+  }
+  50% {
+    transform: translate(-10%, 5%);
+  }
+  60% {
+    transform: translate(15%, 0);
+  }
+  70% {
+    transform: translate(0, 10%);
+  }
+  80% {
+    transform: translate(-15%, 0);
+  }
+  90% {
+    transform: translate(10%, 5%);
+  }
+  100% {
+    transform: translate(5%, 0);
+  }
+}
+
+@keyframes bg-animation {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5%, -5%);
+  }
+  20% {
+    transform: translate(-10%, 5%);
+  }
+  30% {
+    transform: translate(5%, -10%);
+  }
+  40% {
+    transform: translate(-5%, 15%);
+  }
+  50% {
+    transform: translate(-10%, 5%);
+  }
+  60% {
+    transform: translate(15%, 0);
+  }
+  70% {
+    transform: translate(0, 10%);
+  }
+  80% {
+    transform: translate(-15%, 0);
+  }
+  90% {
+    transform: translate(10%, 5%);
+  }
+  100% {
+    transform: translate(5%, 0);
+  }
+}/*# sourceMappingURL=main.css.map */
