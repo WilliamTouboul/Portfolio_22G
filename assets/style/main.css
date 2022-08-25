@@ -26,13 +26,19 @@ body {
 }
 
 body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   background-color: #081820;
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 body .noise {
   position: absolute;
   top: 0;
   left: 0;
-  min-height: 100vh;
+  bottom: 0;
+  min-height: 200vh;
   min-width: 100vw;
   background-image: url("../images/noise.jpg");
   background-repeat: repeat;
@@ -40,11 +46,13 @@ body .noise {
   background-position: bottom center;
   mix-blend-mode: overlay;
   opacity: 0.9;
-  -webkit-animation: noise-anim 0.6s infinite;
-          animation: noise-anim 0.6s infinite;
+  -webkit-animation: noise-anim 1s infinite;
+          animation: noise-anim 1s infinite;
 }
 body main {
-  padding: 60px;
+  padding-top: 60px;
+  padding-left: 60px;
+  padding-right: 60px;
   min-height: 100vh;
   height: 100%;
   width: 100%;
@@ -92,7 +100,7 @@ body main .page_title p {
   font-weight: 500;
 }
 body main nav {
-  width: 100%;
+  width: calc(100% - 120px);
   height: 48px;
   border-top: #E0F8D0 1px solid;
   border-bottom: #E0F8D0 1px solid;
@@ -102,6 +110,8 @@ body main nav {
   padding-left: 20%;
   padding-right: 20%;
   justify-content: space-between;
+  position: absolute;
+  bottom: 0;
 }
 body main nav .link {
   display: flex;
@@ -121,4 +131,31 @@ body main nav .link a {
   color: #E0F8D0;
   text-decoration: none;
   font-size: 24px;
+}
+body .container {
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+}
+body .title {
+  font-size: 12vw;
+  position: relative;
+  color: #E0F8D0;
+  display: flex;
+  margin: 0;
+  will-change: transform;
+  font-family: "Montreal Medium";
+  font-weight: 500;
+}
+body .title img {
+  margin-left: 18px;
+  margin-right: 18px;
+}
+body .main_2 {
+  border-top: 1px #E0F8D0 solid;
+  width: calc(100% - 120px);
+  margin-left: 60px;
+  min-height: 100vh;
+  height: 100%;
 }/*# sourceMappingURL=main.css.map */
