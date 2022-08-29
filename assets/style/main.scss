@@ -34,9 +34,9 @@ $green : #88C070;
 $dark-green : #346856;
 $bg-dark : #081820;
 
-$h1-size : 96px;
-$h2-size : 64px;
-$h3-size : 48px;
+$h1-size : 5vw;
+$h2-size : 3.4vw;
+$h3-size : 2.6vw;
 $p-bigger : 24px;
 $p-size : 16px;
 
@@ -52,19 +52,64 @@ body {
     background-color: $bg-dark;
 
     .noise {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        min-height: 200vh;
-        min-width: 100vw;
-        background-image: url('../images/noise.jpg');
+        position: fixed;
+        top: -50%;
+        left: -50%;
+        right: -50%;
+        bottom: -50%;
+        width: 200%;
+        height: 200vh;
+        background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
         background-repeat: repeat;
-        background-size: cover;
-        background-position: bottom center;
-        mix-blend-mode: overlay;
+        animation: bg-animation .6s infinite;
         opacity: .9;
-        animation: noise-anim 1s infinite;
+        visibility: visible;
+    }
+
+    @keyframes bg-animation {
+        0% {
+            transform: translate(0, 0)
+        }
+
+        10% {
+            transform: translate(-5%, -5%)
+        }
+
+        20% {
+            transform: translate(-10%, 5%)
+        }
+
+        30% {
+            transform: translate(5%, -10%)
+        }
+
+        40% {
+            transform: translate(-5%, 15%)
+        }
+
+        50% {
+            transform: translate(-10%, 5%)
+        }
+
+        60% {
+            transform: translate(15%, 0)
+        }
+
+        70% {
+            transform: translate(0, 10%)
+        }
+
+        80% {
+            transform: translate(-15%, 0)
+        }
+
+        90% {
+            transform: translate(10%, 5%)
+        }
+
+        100% {
+            transform: translate(5%, 0)
+        }
     }
 
     main {
@@ -117,6 +162,7 @@ body {
                 width: 36px;
                 background-color: $green;
                 margin-right: 12px;
+                z-index : 50;
             }
 
             p {
