@@ -66,52 +66,6 @@ body {
         visibility: visible;
     }
 
-    @keyframes bg-animation {
-        0% {
-            transform: translate(0, 0)
-        }
-
-        10% {
-            transform: translate(-5%, -5%)
-        }
-
-        20% {
-            transform: translate(-10%, 5%)
-        }
-
-        30% {
-            transform: translate(5%, -10%)
-        }
-
-        40% {
-            transform: translate(-5%, 15%)
-        }
-
-        50% {
-            transform: translate(-10%, 5%)
-        }
-
-        60% {
-            transform: translate(15%, 0)
-        }
-
-        70% {
-            transform: translate(0, 10%)
-        }
-
-        80% {
-            transform: translate(-15%, 0)
-        }
-
-        90% {
-            transform: translate(10%, 5%)
-        }
-
-        100% {
-            transform: translate(5%, 0)
-        }
-    }
-
     main {
         padding-top: 60px;
         padding-left: 60px;
@@ -134,8 +88,14 @@ body {
             }
 
             h2 {
+                p {
+                    margin-right: 35px;
+                }
+
                 font-size: $h2-size;
                 font-weight: 500;
+                display: flex;
+                flex-direction: row;
             }
 
             h3 {
@@ -162,7 +122,7 @@ body {
                 width: 36px;
                 background-color: $green;
                 margin-right: 12px;
-                z-index : 50;
+                z-index: 50;
             }
 
             p {

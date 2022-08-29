@@ -1,33 +1,45 @@
-@keyframes noise-anim {
+@keyframes bg-animation {
     0% {
-        background-position: bottom center;
+        transform: translate(0, 0)
+    }
+
+    10% {
+        transform: translate(-5%, -5%)
     }
 
     20% {
-        background-position: center center;
+        transform: translate(-10%, 5%)
+    }
+
+    30% {
+        transform: translate(5%, -10%)
     }
 
     40% {
-        background-position: center top;
+        transform: translate(-5%, 15%)
+    }
+
+    50% {
+        transform: translate(-10%, 5%)
     }
 
     60% {
-        background-position: center center;
+        transform: translate(15%, 0)
     }
 
     70% {
-        background-position: bottom center;
+        transform: translate(0, 10%)
     }
 
     80% {
-        background-position: center top;
+        transform: translate(-15%, 0)
     }
 
     90% {
-        background-position: center top;
+        transform: translate(10%, 5%)
     }
 
     100% {
-        background-position: bottom center;
+        transform: translate(5%, 0)
     }
 }
