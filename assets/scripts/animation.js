@@ -6,7 +6,7 @@ tl.from('#name_top_left', {
 tl.from('.h_top_left', {
     x: '-50vw',
     stagger: 0.8,
-    duration: 1.4
+    duration: 1.8
 });
 
 tl.from('#square_portfolio', {
