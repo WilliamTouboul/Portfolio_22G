@@ -1,3 +1,7 @@
+/* -------------------------------------------------------------------------- */
+/*                           Animation onload header                          */
+/* -------------------------------------------------------------------------- */
+
 var tl = gsap.timeline();
 tl.from('#name_top_left', {
     y: 150
@@ -18,6 +22,7 @@ tl.from('#square_portfolio', {
 tl.from('#main_pf_title', {
     x: '-45vw',
     ease: "power4.out",
+    duration : 1.2
 });
 
 tl.from('#square_portfolio', {
@@ -29,3 +34,4 @@ tl.from('#square_portfolio', {
 tl.from('#main_nav', {
     y: 48
 });
+

@@ -47,6 +47,11 @@ body .noise {
           animation: bg-animation 0.6s infinite;
   opacity: 0.9;
   visibility: visible;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 body main {
   padding-top: 60px;
@@ -143,7 +148,8 @@ body .container {
   display: flex;
   flex-direction: row;
 }
-body .title {
+body .title,
+body .title_2 {
   font-size: 12vw;
   position: relative;
   color: #E0F8D0;
@@ -153,16 +159,180 @@ body .title {
   font-family: "Montreal Medium";
   font-weight: 500;
 }
-body .title img {
+body .title img,
+body .title_2 img {
   margin-left: 18px;
   margin-right: 18px;
 }
-body .main_2 {
+body .project_list {
   border-top: 1px #E0F8D0 solid;
-  width: calc(100% - 120px);
+  border-bottom: 1px #E0F8D0 solid;
+  min-height: 50px;
   margin-left: 60px;
-  min-height: 100vh;
-  height: 100%;
+  margin-right: 60px;
+  display: flex;
+  flex-direction: column;
+  z-index: 150;
 }
-
-/* push 1838 *//*# sourceMappingURL=main.css.map */
+body .project_list .list_inner {
+  width: 80%;
+  min-height: 50px;
+  align-self: flex-end;
+}
+body .project_list .list_inner .list_element {
+  display: grid;
+  grid-template-columns: 6fr 3fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+  height: 160px;
+  text-decoration: none;
+  border-bottom: 1px #E0F8D0 solid;
+}
+body .project_list .list_inner .list_element h4 {
+  font-size: 3.4vw;
+  color: #E0F8D0;
+  font-family: "Montreal Medium";
+  font-weight: 500;
+}
+body .project_list .list_inner .list_element h4 span {
+  color: #88C070;
+}
+body .project_list .list_inner .list_element p {
+  font-size: 16px;
+  font-family: "Montreal Medium";
+  font-weight: 500;
+}
+body .project_list .list_inner .list_element p .cat {
+  color: #E0F8D0;
+}
+body .project_list .list_inner .list_element p .date {
+  color: #88C070;
+}
+body .project_list .list_inner .list_element .element_img {
+  display: none;
+  width: 0;
+  height: 0;
+}
+body .project_list .list_inner .see_more {
+  margin-top: 24px;
+  margin-bottom: 96px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: "Montreal Medium";
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+}
+body .project_list .list_inner .see_more a {
+  text-decoration: none;
+  color: #E0F8D0;
+}
+body .project_list .list_inner .see_more img {
+  background-color: #88C070;
+  padding: 4px;
+  height: 17px;
+  width: 17px;
+  margin-left: 14px;
+}
+body .about_me {
+  margin-right: 60px;
+  margin-left: 60px;
+  padding-left: 15%;
+  border-top: 1px #E0F8D0 solid;
+  border-bottom: 1px #E0F8D0 solid;
+  min-height: 50px;
+  padding-top: 96px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 70px;
+}
+body .about_me .about_me_text {
+  font-size: 16px;
+  font-family: "Montreal Medium";
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #E0F8D0;
+  text-align: justify;
+  width: 35vw;
+  position: relative;
+}
+body .about_me .about_me_text p {
+  position: relative;
+  text-indent: 24px;
+  margin-bottom: 16px;
+  letter-spacing: 0.045em;
+  line-height: 21px;
+}
+body .about_me .about_me_text p::after {
+  content: "";
+  height: 14px;
+  width: 14px;
+  background-color: #88C070;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+body .about_me .page_title {
+  color: #E0F8D0;
+  font-family: "Montreal Medium";
+  align-self: flex-end;
+  display: flex;
+  flex-direction: row;
+  height: 40vh;
+  align-items: center;
+}
+body .about_me .page_title .square {
+  height: 36px;
+  width: 36px;
+  background-color: #88C070;
+  margin-right: 12px;
+  z-index: 50;
+}
+body .about_me .page_title p {
+  font-size: 5vw;
+  font-weight: 500;
+}
+body footer {
+  margin-right: 60px;
+  margin-left: 60px;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+body footer .links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+body footer .links a {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  color: #E0F8D0;
+  font-family: "Montreal Medium";
+  font-size: 16px;
+  font-weight: 500;
+}
+body footer .links a img {
+  height: 18px;
+  width: 18px;
+  margin-left: 16px;
+  transition: all 0.5s ease-in-out;
+}
+body footer .links a:hover {
+  color: #88C070;
+}
+body footer .links a:hover img {
+  transform: rotate(-45deg);
+  fill: #88C070 !important;
+}
+body footer .to_top_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body footer .to_top_container img {
+  transform: rotate(-45deg);
+}/*# sourceMappingURL=main.css.map */
