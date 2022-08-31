@@ -20,10 +20,6 @@
   font-family: "Montreal Thin";
   src: url("../fonts/PPNeueMontreal-Thin.otf");
 }
-.scroll_locked {
-  overflow-y: hidden;
-}
-
 body {
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -64,6 +60,13 @@ body main {
   display: flex;
   flex-direction: column;
 }
+@media screen and (max-width: 768px) {
+  body main {
+    padding-top: 24px;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}
 body main .top_left {
   color: #E0F8D0;
   font-family: "Montreal Medium";
@@ -71,6 +74,11 @@ body main .top_left {
 body main .top_left h1 {
   font-size: 5vw;
   font-weight: 500;
+}
+@media screen and (max-width: 768px) {
+  body main .top_left h1 {
+    font-size: 36px;
+  }
 }
 body main .top_left h2 {
   font-size: 3.4vw;
@@ -81,9 +89,19 @@ body main .top_left h2 {
 body main .top_left h2 span {
   margin-right: 15px;
 }
+@media screen and (max-width: 768px) {
+  body main .top_left h2 {
+    font-size: 24px;
+  }
+}
 body main .top_left h3 {
   font-size: 2.6vw;
   font-weight: 500;
+}
+@media screen and (max-width: 768px) {
+  body main .top_left h3 {
+    font-size: 24px;
+  }
 }
 body main .top_left span {
   color: #88C070;
@@ -97,6 +115,12 @@ body main .page_title {
   align-items: center;
   height: 40vh;
 }
+@media screen and (max-width: 768px) {
+  body main .page_title {
+    align-items: flex-end;
+    height: 60vh;
+  }
+}
 body main .page_title .square {
   height: 36px;
   width: 36px;
@@ -107,6 +131,11 @@ body main .page_title .square {
 body main .page_title p {
   font-size: 5vw;
   font-weight: 500;
+}
+@media screen and (max-width: 768px) {
+  body main .page_title p {
+    font-size: 36px;
+  }
 }
 body main nav {
   width: calc(100% - 120px);
@@ -121,6 +150,13 @@ body main nav {
   justify-content: space-between;
   position: absolute;
   bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  body main nav {
+    width: calc(100% - 48px);
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 }
 body main nav .link {
   display: flex;
@@ -141,6 +177,11 @@ body main nav .link a {
   text-decoration: none;
   font-size: 24px;
 }
+@media screen and (max-width: 768px) {
+  body main nav .link a {
+    font-size: 14px;
+  }
+}
 body .container {
   overflow: hidden;
   white-space: nowrap;
@@ -158,6 +199,12 @@ body .title_2 {
   font-family: "Montreal Medium";
   font-weight: 500;
 }
+@media screen and (max-width: 768px) {
+  body .title,
+body .title_2 {
+    font-size: 96px;
+  }
+}
 body .title img,
 body .title_2 img {
   margin-left: 18px;
@@ -174,10 +221,23 @@ body .project_list {
   z-index: 150;
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  body .project_list {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}
 body .project_list .list_inner {
   width: 80%;
   min-height: 50px;
   align-self: flex-end;
+}
+@media screen and (max-width: 768px) {
+  body .project_list .list_inner {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 body .project_list .list_inner .list_element {
   display: grid;
@@ -188,6 +248,11 @@ body .project_list .list_inner .list_element {
   text-decoration: none;
   border-bottom: 1px #E0F8D0 solid;
 }
+@media screen and (max-width: 768px) {
+  body .project_list .list_inner .list_element {
+    grid-template-columns: 4fr 3fr 1fr;
+  }
+}
 body .project_list .list_inner .list_element h4 {
   font-size: 3.4vw;
   color: #E0F8D0;
@@ -197,10 +262,20 @@ body .project_list .list_inner .list_element h4 {
 body .project_list .list_inner .list_element h4 span {
   color: #88C070;
 }
+@media screen and (max-width: 768px) {
+  body .project_list .list_inner .list_element h4 {
+    font-size: 14px;
+  }
+}
 body .project_list .list_inner .list_element p {
   font-size: 16px;
   font-family: "Montreal Medium";
   font-weight: 500;
+}
+@media screen and (max-width: 768px) {
+  body .project_list .list_inner .list_element p {
+    font-size: 8px;
+  }
 }
 body .project_list .list_inner .list_element p .cat {
   color: #E0F8D0;
@@ -208,10 +283,11 @@ body .project_list .list_inner .list_element p .cat {
 body .project_list .list_inner .list_element p .date {
   color: #88C070;
 }
-body .project_list .list_inner .list_element .element_img {
-  display: none;
-  width: 0;
-  height: 0;
+@media screen and (max-width: 768px) {
+  body .project_list .list_inner .list_element img {
+    height: 14px;
+    width: 14px;
+  }
 }
 body .project_list .list_inner .see_more {
   margin-top: 24px;
@@ -247,15 +323,29 @@ body .about_me {
   justify-content: space-between;
   padding-bottom: 70px;
 }
+@media screen and (max-width: 768px) {
+  body .about_me {
+    flex-direction: column;
+    margin-right: 24px;
+    margin-left: 24px;
+    padding-left: 0;
+  }
+}
 body .about_me .about_me_text {
   font-size: 16px;
   font-family: "Montreal Medium";
-  font-weight: 300;
+  font-weight: 500;
   text-transform: uppercase;
   color: #E0F8D0;
   text-align: justify;
   width: 35vw;
   position: relative;
+}
+@media screen and (max-width: 768px) {
+  body .about_me .about_me_text {
+    width: 100%;
+    font-size: 12px;
+  }
 }
 body .about_me .about_me_text p {
   position: relative;
@@ -293,6 +383,11 @@ body .about_me .page_title p {
   font-size: 5vw;
   font-weight: 500;
 }
+@media screen and (max-width: 768px) {
+  body .about_me .page_title p {
+    font-size: 36px;
+  }
+}
 body footer {
   margin-right: 60px;
   margin-left: 60px;
@@ -300,6 +395,18 @@ body footer {
   grid-template-columns: 4fr 1fr;
   padding-top: 24px;
   padding-bottom: 24px;
+}
+@media screen and (max-width: 768px) {
+  body footer {
+    margin-left: 24px;
+    margin-right: 24px;
+    padding-top: 12px;
+    padding-right: 12px;
+  }
+  body footer img {
+    height: 13px;
+    width: 13px;
+  }
 }
 body footer .links {
   display: flex;
@@ -315,11 +422,23 @@ body footer .links a {
   font-size: 16px;
   font-weight: 500;
 }
+@media screen and (max-width: 768px) {
+  body footer .links a {
+    font-size: 8px;
+  }
+}
 body footer .links a img {
   height: 18px;
   width: 18px;
   margin-left: 16px;
   transition: all 0.5s ease-in-out;
+}
+@media screen and (max-width: 768px) {
+  body footer .links a img {
+    height: 8px;
+    width: 8px;
+    margin-left: 8px;
+  }
 }
 body footer .links a:hover {
   color: #88C070;
@@ -345,4 +464,9 @@ body footer .to_top_container img {
   width: 20%;
   transform: translateY(-50%);
   transition: all 0.2s ease-out;
+}
+@media screen and (max-width: 768px) {
+  .project_img {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
