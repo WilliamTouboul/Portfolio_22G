@@ -24,10 +24,6 @@
     src: url('../fonts/PPNeueMontreal-Thin.otf');
 }
 
-html,
-body {
-    overflow-x: hidden;
-}
 
 $text-clr : #E0F8D0;
 $green : #88C070;
@@ -41,7 +37,12 @@ $p-bigger : 24px;
 $p-size : 16px;
 
 
+.scroll_locked {
+    overflow-y: hidden;
+}
+
 body {
+
 
     &::-webkit-scrollbar {
         display: none;
@@ -205,6 +206,8 @@ body {
         display: flex;
         flex-direction: column;
         z-index: 150;
+        position: relative;
+
 
         .list_inner {
             width: 80%;
@@ -382,7 +385,7 @@ body {
 
             img {
                 transform: rotate(-45deg);
-                fill : $green !important;
+                fill: $green !important;
             }
         }
 
@@ -391,10 +394,20 @@ body {
             display: flex;
             align-items: center;
             justify-content: center;
+            cursor: pointer;
 
             img {
                 transform: rotate(-45deg)
             }
         }
     }
+}
+
+.project_img {
+    position: absolute;
+    top: 0;
+    left: -20%;
+    width: 20%;
+    transform : translateY(-50%);
+    transition : all 0.2s ease-out;
 }
