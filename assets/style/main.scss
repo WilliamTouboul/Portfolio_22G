@@ -30,16 +30,16 @@ $green : #88C070;
 $dark-green : #346856;
 $bg-dark : #081820;
 
-$h1-size : 5vw;
+$h1-size : 5vw; 
 $h2-size : 3.4vw;
 $h3-size : 2.6vw;
 $p-bigger : 24px;
 $p-size : 16px;
 
 
-// .scroll_locked {
-//     overflow-y: hidden;
-// }
+.scroll_locked {
+    overflow-y: hidden;
+}
 
 body {
 
@@ -188,7 +188,6 @@ body {
                 margin-right: 8px;
                 align-items: center;
 
-
                 .square {
                     height: 16px;
                     width: 16px;
@@ -229,6 +228,7 @@ body {
         will-change: transform;
         font-family: 'Montreal Medium';
         font-weight: 500;
+        text-transform: uppercase;
 
         @media screen and (max-width: 768px) {
             font-size: 96px;

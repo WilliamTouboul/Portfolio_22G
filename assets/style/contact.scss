@@ -1,0 +1,168 @@
+@import 'main.scss';
+
+.main_contact {
+    @media screen and (max-width: 768px) {
+        height: 100vh;
+    }
+
+    .main_inner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+        }
+
+        .form_container {
+
+            .accroche {
+                display: flex;
+                flex-direction: row;
+
+                @media screen and (max-width: 768px) {
+                    margin-top: 9px;
+                }
+
+                p {
+                    font-size: 32px;
+                    font-family: "Montreal Medium";
+                    font-size: 500;
+                    color: $text-clr;
+                    width: 85%;
+
+                    @media screen and (max-width: 768px) {
+                        font-size: 12px;
+                    }
+
+                }
+
+                img {
+                    align-self: flex-end;
+
+                    @media screen and (max-width: 768px) {
+                        height: 23px;
+                        width: 23px;
+                    }
+
+                }
+            }
+
+            form {
+
+                display: flex;
+                flex-direction: column;
+                width: calc(44vw + 36px);
+
+                @media screen and (max-width: 768px) {
+                    margin-top: 9px;
+                    width: 100%;
+                }
+
+
+                label {
+                    display: none;
+                }
+
+                .form_line {
+                    display: flex;
+                    flex-direction: row;
+
+                    @media screen and (max-width: 768px) {
+                        width: 100%;
+                        flex-direction: column;
+                    }
+                }
+
+                input {
+                    height: 56px;
+                    width: 22vw;
+                    margin-right: 36px;
+                    margin-top: 36px;
+                    background-color: transparent;
+                    border: none;
+                    border-top: 1px $text-clr solid;
+                    border-bottom: 1px $text-clr solid;
+                    color: $text-clr;
+                    font-family: "Montreal Medium";
+                    font-size: 16px;
+
+                    &::placeholder {
+                        font-family: 'Montreal Medium';
+                        font-size: 16px;
+                        font-weight: 500;
+
+                        @media screen and (max-width: 768px) {
+                            font-size: 12px;
+                        }
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        width: 100%;
+                        margin-top: 9px;
+                        margin-bottom: 9px;
+                        height: 32px;
+                        padding-left: 24px;
+                    }
+
+
+
+                }
+
+                textarea {
+                    width: calc(44vw + 36px);
+                    margin-top: 36px;
+                    background-color: transparent;
+                    border: none;
+                    border-top: 1px $text-clr solid;
+                    border-bottom: 1px $text-clr solid;
+                    height: 240px;
+                    resize: none;
+                    padding: 16px;
+
+                    color: $text-clr;
+                    font-family: "Montreal Medium";
+                    font-size: 16px;
+
+                    @media screen and (max-width: 768px) {
+                        width: 100%;
+                    }
+
+                    &::placeholder {
+                        @media screen and (max-width: 768px) {
+                            font-size: 12px;
+                        }
+                    }
+                }
+
+                button {
+                    height: 56px;
+                    width: 380px;
+                    margin-top: 36px;
+                    align-self: flex-end;
+                    background-color: transparent;
+                    border: none;
+                    border-top: 1px $text-clr solid;
+                    border-bottom: 1px $text-clr solid;
+
+                    color: $text-clr;
+                    font-family: "Montreal Medium";
+                    font-weight: 800;
+                    font-size: 16px;
+
+                    @media screen and (max-width: 768px) {
+                        width: 100%;
+                        margin-left: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.page_title {
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}

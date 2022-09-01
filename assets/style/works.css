@@ -474,4 +474,45 @@ body footer .to_top_container img {
   .project_img {
     display: none;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+
+.main_works .text_works_intro {
+  width: 30%;
+  font-family: "Montreal Medium";
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #E0F8D0;
+  margin-top: 84px;
+  margin-bottom: 84px;
+}
+@media screen and (max-width: 768px) {
+  .main_works .text_works_intro {
+    width: 100%;
+  }
+}
+.main_works .text_works_intro p {
+  position: relative;
+  padding-left: 36px;
+  font-weight: 500;
+}
+.main_works .text_works_intro p a {
+  color: #88C070;
+  text-decoration: none;
+  font-weight: 800;
+}
+.main_works .text_works_intro p:after {
+  content: "";
+  height: 16px;
+  width: 16px;
+  background-color: #88C070;
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+.main_works .page_title {
+  height: 30vh;
+}
+
+.list_inner {
+  margin-bottom: 204px;
+}/*# sourceMappingURL=works.css.map */

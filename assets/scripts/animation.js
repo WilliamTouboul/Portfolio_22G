@@ -16,6 +16,7 @@ window.onload = function () {
 
 /* -------------------------------------------------------------------------- */
 var tl = gsap.timeline();
+
 tl.from('#name_top_left', {
     y: 150
 });

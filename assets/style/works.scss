@@ -1,0 +1,47 @@
+@import 'main.scss';
+
+.main_works {
+    .text_works_intro {
+        width: 30%;
+        font-family: 'Montreal Medium';
+        font-size: 16px;
+        text-transform: uppercase;
+        color: $text-clr;
+        margin-top: 84px;
+        margin-bottom: 84px;
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+
+        p {
+            position: relative;
+            padding-left: 36px;
+            font-weight: 500;
+
+            a {
+                color: $green;
+                text-decoration: none;
+                font-weight: 800;
+            }
+
+            &:after {
+                content: '';
+                height: 16px;
+                width: 16px;
+                background-color: $green;
+                position: absolute;
+                left: 0;
+                top: 2px;
+            }
+        }
+    }
+
+    .page_title{
+        height: 30vh;
+    }
+}
+
+.list_inner {
+    margin-bottom: 204px;
+}

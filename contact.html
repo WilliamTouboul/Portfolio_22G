@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll_locked">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>William Touboul</title>
+    <link rel="stylesheet" href="assets/style/anim.css">
+    <link rel="stylesheet" href="assets/style/contact.css">
+
+    <link rel="icon" type="image/png" href="assets/images/rect.svg" sizes="16x16">
+</head>
+
+<body>
+    <div class="noise"></div>
+
+    <main class="main_contact">
+
+        <div class="top_left">
+            <div class="container">
+                <h1 id="name_top_left">
+                    WILLIAM TOUBOUL
+                </h1>
+            </div>
+        </div>
+        <div class="main_inner">
+
+            <div class="form_container">
+                <div class="accroche">
+                    <p>
+                        Besoin d'un coup de main ou juste d'une simple question ?
+                        <br>
+                        N'hesitez pas a envoyer un message
+                    </p>
+                    <img src="assets/images/green_arrow.svg" alt="">
+                </div>
+
+                <form action="https://formsubmit.co/95deda19921f77801f91fd5f8d08f56c" method="POST">
+                    <input type="hidden" name="_subject" value="nouveau mail">
+                    <!-- <input type="hidden" name="_next" value="https://williamtouboul.com/thankyou.html"> -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <div>
+                        <label for="name">NOM</label>
+                        <input type="text" name="Nom" id="name" placeholder="NOM & PRENOM" required>
+                    </div>
+                    <div class="form_line">
+                        <div>
+                            <label for="email">MAIL</label>
+                            <input type="email" name="email" id="email" placeholder="MAIL" required>
+                        </div>
+                        <div>
+                            <label for="téléphone">TELEPHONE</label>
+                            <input type="text" name="Téléphone" id="téléphone" placeholder="TEL." required>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="message">MESSAGE</label>
+                        <textarea name="message" id="message" placeholder="VOTRE MESSAGE" cols="30" rows="6"
+                            required></textarea>
+                    </div>
+
+                    <input type="hidden" name="_captcha" value="true">
+                    <button type="submit" class="submit">ENVOYER</button>
+                </form>
+            </div>
+            <div class="page_title" style="overflow:hidden">
+                <div class="square" id="square_portfolio"></div>
+                <p id="main_pf_title">
+                    CONTACT.
+                </p>
+            </div>
+
+        </div>
+
+
+        <nav id="main_nav">
+            <div class="link">
+                <div class="square"></div>
+                <a href="works.html">
+                    TRAVAUX
+                </a>
+            </div>
+
+            <div class="link">
+                <div class="square"></div>
+                <a href="#">
+                    CONTACT
+                </a>
+            </div>
+        </nav>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+
+    <script src="assets/scripts/index.js"></script>
+
+    <script>
+
+    </script>
+</body>
+
+</html>
