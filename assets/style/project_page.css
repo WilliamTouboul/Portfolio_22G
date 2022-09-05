@@ -608,26 +608,8 @@ body footer .to_top_container img {
 .landing_project .right img {
   height: 100%;
   width: 100%;
-  filter: contrast(95%) brightness(85%) grayscale(100);
-  transition: all 0.5s;
   -o-object-fit: cover;
      object-fit: cover;
-}
-.landing_project .right .filter {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #346856;
-  mix-blend-mode: overlay;
-  transition: all 0.5s;
-}
-.landing_project .right:hover .filter {
-  opacity: 0;
-}
-.landing_project .right:hover img {
-  filter: contrast(95%) brightness(85%) grayscale(0);
 }
 
 @media screen and (max-width: 768px) {
@@ -687,7 +669,6 @@ nav .link p:first-child {
 }
 .under_nav .gallery .gallery_container img {
   width: 95%;
-  filter: contrast(95%) brightness(85%) grayscale(100);
   position: relative;
 }
 @media screen and (max-width: 768px) {
@@ -695,27 +676,6 @@ nav .link p:first-child {
     width: calc(100vw - 45px);
     margin-right: 50px;
   }
-}
-.under_nav .gallery .gallery_container .filter {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 95%;
-  background-color: #346856;
-  mix-blend-mode: overlay;
-  transition: all 0.5s;
-}
-@media screen and (max-width: 768px) {
-  .under_nav .gallery .gallery_container .filter {
-    width: calc(100vw - 45px);
-  }
-}
-.under_nav .gallery .gallery_container:hover .filter {
-  opacity: 0;
-}
-.under_nav .gallery .gallery_container:hover img {
-  filter: contrast(95%) brightness(85%) grayscale(0);
 }
 .under_nav .text_1 {
   display: flex;
@@ -769,23 +729,6 @@ nav .link p:first-child {
   height: 240px;
   -o-object-fit: cover;
      object-fit: cover;
-  filter: contrast(95%) brightness(85%) grayscale(100);
-}
-.under_nav .banner .filter {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #346856;
-  mix-blend-mode: overlay;
-  transition: all 0.5s;
-}
-.under_nav .banner:hover .filter {
-  opacity: 0;
-}
-.under_nav .banner:hover img {
-  filter: contrast(95%) brightness(85%) grayscale(0);
 }
 .under_nav .bottom {
   display: flex;
@@ -793,6 +736,7 @@ nav .link p:first-child {
   justify-content: center;
   align-items: center;
   margin-bottom: 126px;
+  position: relative;
 }
 @media screen and (max-width: 768px) {
   .under_nav .bottom {
@@ -814,30 +758,15 @@ nav .link p:first-child {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  filter: contrast(95%) brightness(85%) grayscale(100);
-}
-.under_nav .bottom .left .filter {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #346856;
-  mix-blend-mode: overlay;
-  transition: all 0.5s;
-}
-.under_nav .bottom .left:hover .filter {
-  opacity: 0;
-}
-.under_nav .bottom .left:hover img {
-  filter: contrast(95%) brightness(85%) grayscale(0);
 }
 .under_nav .bottom .right {
   height: 100%;
   width: 50%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 @media screen and (max-width: 768px) {
   .under_nav .bottom .right {
@@ -871,6 +800,15 @@ nav .link p:first-child {
   height: 95%;
   width: 8px;
   background-color: #88C070;
+}
+.under_nav .bottom .palette {
+  height: 50px;
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 footer {
