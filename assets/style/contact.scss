@@ -25,7 +25,7 @@
                 }
 
                 p {
-                    font-size: 32px;
+                    font-size: 24px;
                     font-family: "Montreal Medium";
                     font-size: 500;
                     color: $text-clr;
@@ -116,7 +116,7 @@
                     border: none;
                     border-top: 1px $text-clr solid;
                     border-bottom: 1px $text-clr solid;
-                    height: 240px;
+                    height: 20vh;
                     resize: none;
                     padding: 16px;
 
@@ -144,7 +144,7 @@
                     border: none;
                     border-top: 1px $text-clr solid;
                     border-bottom: 1px $text-clr solid;
-
+                    cursor: pointer;
                     color: $text-clr;
                     font-family: "Montreal Medium";
                     font-weight: 800;

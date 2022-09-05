@@ -24,6 +24,11 @@
   overflow-y: hidden;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   -ms-overflow-style: none;
   scrollbar-width: none;

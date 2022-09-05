@@ -24,6 +24,11 @@
   overflow-y: hidden;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -51,6 +56,53 @@ body .noise {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+body .loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #081820;
+  z-index: 9999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .loader .inner {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+}
+body .loader .inner .top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body .loader .inner .top p {
+  color: #E0F8D0;
+  font-family: "Montreal Medium";
+  font-weight: 500;
+}
+body .loader .inner .top p .p_1 {
+  font-size: 24px;
+}
+body .loader .inner .top p .inter {
+  color: #88C070;
+  margin-left: 24px;
+}
+body .loader .inner .jauge {
+  width: 100%;
+  height: 8px;
+  background-color: #346856;
+  margin-top: 24px;
+  position: relative;
+}
+body .loader .inner .jauge .jauge_inner {
+  width: 0%;
+  height: 100%;
+  background-color: #88C070;
+  position: absolute;
 }
 body main {
   padding-top: 60px;
@@ -501,7 +553,7 @@ body footer .to_top_container img {
   }
 }
 .main_contact .main_inner .form_container .accroche p {
-  font-size: 32px;
+  font-size: 24px;
   font-family: "Montreal Medium";
   font-size: 500;
   color: #E0F8D0;
@@ -600,7 +652,7 @@ body footer .to_top_container img {
   border: none;
   border-top: 1px #E0F8D0 solid;
   border-bottom: 1px #E0F8D0 solid;
-  height: 240px;
+  height: 20vh;
   resize: none;
   padding: 16px;
   color: #E0F8D0;
@@ -632,6 +684,7 @@ body footer .to_top_container img {
   border: none;
   border-top: 1px #E0F8D0 solid;
   border-bottom: 1px #E0F8D0 solid;
+  cursor: pointer;
   color: #E0F8D0;
   font-family: "Montreal Medium";
   font-weight: 800;
