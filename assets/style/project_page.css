@@ -810,6 +810,11 @@ nav .link p:first-child {
   padding-left: 24px;
   padding-right: 24px;
 }
+@media screen and (max-width: 768px) {
+  .under_nav .bottom .palette {
+    width: 100px;
+  }
+}
 
 footer {
   border-top: 1px #E0F8D0 solid;

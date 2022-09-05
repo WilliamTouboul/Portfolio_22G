@@ -41,6 +41,10 @@ $p-size : 16px;
     overflow-y: hidden;
 }
 
+strong {
+    color: $green;
+}
+
 html,
 body {
     overflow-x: hidden;

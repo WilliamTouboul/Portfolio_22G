@@ -24,6 +24,10 @@
   overflow-y: hidden;
 }
 
+strong {
+  color: #88C070;
+}
+
 html,
 body {
   overflow-x: hidden;
